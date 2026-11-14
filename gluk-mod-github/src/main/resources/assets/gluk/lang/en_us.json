@@ -1,0 +1,19 @@
+{
+  "entity.gluk.gluk": "Gluk",
+  "item.gluk.gluk_spawn_egg": "Gluk Spawn Egg",
+  "item.gluk.oshibka_bytiya": "Error of Being",
+  "item.gluk.fire_artifact": "Fire Artifact",
+  "item.gluk.lightning_artifact": "Lightning Artifact",
+  "key.categories.gluk": "Gluk",
+  "key.gluk.portal": "Fire Artifact: open portal",
+  "key.gluk.blink": "Fire Artifact: teleport",
+  "message.gluk.fire_on": "Fire Artifact: ON (H - portal, X - teleport)",
+  "message.gluk.fire_off": "Fire Artifact: OFF",
+  "message.gluk.lightning_on": "Lightning Artifact: ON (double-tap jump to fly)",
+  "message.gluk.lightning_off": "Lightning Artifact: OFF",
+  "message.gluk.need_fire": "Turn on the Fire Artifact first (right-click)",
+  "message.gluk.portal_opened": "Portal opened - step inside",
+  "message.gluk.portal_bad_dim": "Portals only work in the Overworld and the Nether",
+  "message.gluk.blink_fail": "No room to teleport here",
+  "block.gluk.gluk_portal": "Gluk Portal"
+}

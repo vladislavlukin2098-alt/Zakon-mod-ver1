@@ -1,0 +1,19 @@
+{
+  "entity.gluk.gluk": "Глюк",
+  "item.gluk.gluk_spawn_egg": "Яйцо призыва: Глюк",
+  "item.gluk.oshibka_bytiya": "Ошибка Бытия",
+  "item.gluk.fire_artifact": "Огненный артефакт",
+  "item.gluk.lightning_artifact": "Артефакт молнии",
+  "key.categories.gluk": "Gluk",
+  "key.gluk.portal": "Огненный артефакт: открыть портал",
+  "key.gluk.blink": "Огненный артефакт: телепорт",
+  "message.gluk.fire_on": "Огненный артефакт: ВКЛ (H — портал, X — телепорт)",
+  "message.gluk.fire_off": "Огненный артефакт: ВЫКЛ",
+  "message.gluk.lightning_on": "Артефакт молнии: ВКЛ (двойной прыжок — полёт)",
+  "message.gluk.lightning_off": "Артефакт молнии: ВЫКЛ",
+  "message.gluk.need_fire": "Сначала включи Огненный артефакт (ПКМ)",
+  "message.gluk.portal_opened": "Портал открыт — шагни в него",
+  "message.gluk.portal_bad_dim": "Портал работает только в Верхнем мире и Незере",
+  "message.gluk.blink_fail": "Здесь не пролезть",
+  "block.gluk.gluk_portal": "Портал Глюка"
+}
