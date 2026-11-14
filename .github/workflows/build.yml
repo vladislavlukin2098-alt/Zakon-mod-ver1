@@ -1,0 +1,33 @@
+name: build
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: 8.8
+      - name: Build
+        run: |
+          FILE=$(find . -name settings.gradle -not -path './.git/*' | head -n 1)
+          if [ -z "$FILE" ]; then
+            echo "ERROR: settings.gradle not found in the repository. Upload the project files."
+            exit 1
+          fi
+          DIR=$(dirname "$FILE")
+          echo "Project found in: $DIR"
+          cd "$DIR"
+          if [ -f scripts/validate_models.py ]; then python3 scripts/validate_models.py; fi
+          gradle build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gluk-forge-1.20.1-jar
+          path: "**/build/libs/*.jar"
+          if-no-files-found: error
